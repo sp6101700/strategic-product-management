@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Contact Us</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+background:#0f0f0f;
+font-family:'Segoe UI',sans-serif;
+color:white;
+}
+
+/* Navbar */
+
+.navbar{
+background:#000 !important;
+box-shadow:0 5px 15px rgba(0,0,0,0.6);
+}
+
+/* Page Title */
+
+.page-title{
+text-align:center;
+margin-top:60px;
+margin-bottom:40px;
+}
+
+/* Glass Cards */
+
+.glass-card{
+background:rgba(255,255,255,0.05);
+padding:35px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:0.4s;
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+.glass-card:hover{
+transform:translateY(-10px);
+background:rgba(255, 255, 255, 0.112);
+}
+
+/* Contact Icons */
+
+.icon{
+font-size:35px;
+color:#00ffc3;
+margin-bottom:10px;
+}
+
+/* Contact Info Cards */
+
+.contact-card{
+text-align:center;
+padding:25px;
+border-radius:12px;
+background:rgba(255,255,255,0.05);
+transition:0.4s;
+}
+
+.contact-card:hover{
+transform:translateY(-8px);
+background:rgba(255,255,255,0.12);
+}
+
+/* Input Fields */
+
+.form-control{
+-webkit-text-fill-color: aliceblue;
+background:#1b1b1b;
+border:none;
+color:white;
+}
+
+.form-control:focus{
+-webkit-text-fill-color: aliceblue;
+background:#1b1b1b;
+color:white;
+box-shadow:none;
+border:1px solid #00ffc3;
+}
+
+/* Button */
+
+.btn-custom{
+background:#00ffc3;
+color:rgb(249, 246, 246);
+font-weight:600;
+border:none;
+}
+
+.btn-custom:hover{
+background:#00d1a3;
+}
+
+/* Scroll Animation */
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s all ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Footer */
+
+footer{
+margin-top:70px;
+background:#000;
+padding:20px;
+text-align:center;
+color:#bbb;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-dark">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">Back to Home</a>
+</div>
+</nav>
+
+
+<div class="container">
+
+<h2 class="page-title reveal">Contact Us</h2>
+
+
+<!-- Contact Information -->
+
+<div class="row g-4 mb-5">
+
+<div class="col-md-4 reveal">
+
+<div class="contact-card">
+
+<i class="fa-solid fa-envelope icon"></i>
+
+<h5>Email</h5>
+
+<p>
+Personal : bhuvaneshwaricharati@gmail.com 
+    
+College : https://foet.dypgroup.edu.in/
+</p>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4 reveal">
+
+<div class="contact-card">
+
+<i class="fa-solid fa-phone icon"></i>
+
+<h5>Phone</h5>
+
+<p>+91 9588484424</p>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4 reveal">
+
+<div class="contact-card">
+
+<i class="fa-solid fa-location-dot icon"></i>
+
+<h5>Location</h5>
+
+<p>V7F6+WXH, Wathar Warna Nagar Road, Talsande, Maharashtra 416112 India</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Contact Form -->
+
+<div class="glass-card reveal">
+
+<h4 class="mb-4 text-center">Send us a Message</h4>
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Your Name" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="email" class="form-control" placeholder="Your Email" required>
+</div>
+
+</div>
+
+<div class="mb-3">
+<input type="text" class="form-control" placeholder="Subject">
+</div>
+
+<div class="mb-3">
+<textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+</div>
+
+<div class="text-center">
+<button type="submit" class="btn btn-custom px-4">Send Message</button>
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Strategic Product Placement Analysis | Data Visualization Project</p>
+
+</footer>
+
+
+<script>
+
+/* Scroll Reveal Animation */
+
+window.addEventListener("scroll",function(){
+
+const reveals=document.querySelectorAll(".reveal");
+
+for(let i=0;i<reveals.length;i++){
+
+const windowHeight=window.innerHeight;
+const elementTop=reveals[i].getBoundingClientRect().top;
+
+if(elementTop<windowHeight-100){
+reveals[i].classList.add("active");
+}
+
+}
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Strategic Product Placement Analysis - Story</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#0f0f0f;
+color:white;
+min-height:100vh;
+}
+
+/* Navbar */
+
+.navbar{
+background:#000 !important;
+box-shadow:0 4px 12px rgba(0,0,0,0.6);
+}
+
+/* Hero Section */
+
+.hero{
+text-align:center;
+padding:90px 20px;
+}
+
+.hero h1{
+font-weight:700;
+letter-spacing:1px;
+}
+
+/* Glass Card */
+
+.glass-card{
+background:rgba(255,255,255,0.05);
+border-radius:15px;
+padding:35px;
+box-shadow:0 10px 35px rgba(0,0,0,0.6);
+transition:all .4s ease;
+backdrop-filter:blur(8px);
+}
+
+.glass-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 45px rgba(0,0,0,0.8);
+}
+
+/* Feature cards */
+
+.feature-card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:12px;
+text-align:center;
+transition:0.4s;
+}
+
+.feature-card:hover{
+transform:translateY(-8px);
+background:rgba(255,255,255,0.12);
+}
+
+/* Icons */
+
+.icon{
+font-size:40px;
+margin-bottom:15px;
+color:#00ffcc;
+}
+
+/* Tableau container */
+
+.dashboard-box{
+background:rgba(255,255,255,0.05);
+border-radius:15px;
+padding:20px;
+margin-top:40px;
+box-shadow:0 10px 35px rgba(0,0,0,0.6);
+transition:0.4s;
+}
+
+.dashboard-box:hover{
+transform:scale(1.01);
+}
+
+/* Reveal animation */
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:all 1s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Footer */
+
+footer{
+margin-top:70px;
+background:#000;
+padding:20px;
+text-align:center;
+color:#bbb;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-dark">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">Back to Home</a>
+</div>
+</nav>
+
+
+<!-- Hero -->
+
+<section class="hero reveal">
+
+<h1 class="display-5">
+Strategic Product Placement Analysis
+</h1>
+
+<p class="lead text-light">
+Analyzing how brand placement in movies and digital media influences consumer behavior and product sales
+</p>
+
+</section>
+
+
+<!-- Story Section -->
+
+<div class="container">
+
+<div class="glass-card reveal">
+
+<h2 class="text-center mb-4">Project Story</h2>
+
+<p>
+Product placement has become one of the most powerful marketing strategies in modern media.
+Brands collaborate with movies, television shows and digital platforms to integrate their
+products naturally into entertainment content.
+</p>
+
+<p>
+This project focuses on analyzing how product placement affects customer perception,
+brand awareness and purchasing behavior by studying marketing data and media exposure.
+</p>
+
+<p>
+Using Tableau data visualization dashboards, we explore trends in brand appearances,
+campaign effectiveness and audience engagement to help businesses design better
+product placement strategies.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Features -->
+
+<div class="container mt-5">
+
+<div class="row g-4">
+
+<div class="col-md-4 reveal">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-chart-line icon"></i>
+
+<h5>Sales Impact</h5>
+
+<p>Analyze how product placements influence product sales performance.</p>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4 reveal">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-tv icon"></i>
+
+<h5>Media Exposure</h5>
+
+<p>Understand how movies and digital media increase brand visibility.</p>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4 reveal">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-lightbulb icon"></i>
+
+<h5>Marketing Insights</h5>
+
+<p>Generate data-driven strategies to improve marketing campaigns.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Tableau Dashboard -->
+
+<div class="container reveal">
+
+<div class="dashboard-box">
+
+<h3 class="text-center mb-4">Interactive Tableau Dashboard</h3>
+
+<div class='tableauPlaceholder' id='viz1772870076611' style='position: relative'>
+
+<object class='tableauViz' style='display:none;'>
+
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='embed_code_version' value='3' />
+<param name='name' value='Book2_17728698953120/Story1' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+
+</object>
+
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Strategic Product Placement Analysis | Data Visualization Project</p>
+
+</footer>
+
+
+<script>
+
+/* Tableau Embed */
+
+var divElement=document.getElementById('viz1772870076611');
+var vizElement=divElement.getElementsByTagName('object')[0];
+
+vizElement.style.width="100%";
+vizElement.style.height="750px";
+
+var scriptElement=document.createElement('script');
+scriptElement.src='https://public.tableau.com/javascripts/api/viz_v1.js';
+vizElement.parentNode.insertBefore(scriptElement,vizElement);
+
+
+/* Scroll Reveal Animation */
+
+window.addEventListener("scroll",function(){
+
+const reveals=document.querySelectorAll(".reveal");
+
+for(let i=0;i<reveals.length;i++){
+
+const windowHeight=window.innerHeight;
+const elementTop=reveals[i].getBoundingClientRect().top;
+
+if(elementTop<windowHeight-100){
+reveals[i].classList.add("active");
+}
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
